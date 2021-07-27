@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head> 
+
+
+
+<header class="header">
+
+    <div class="title">
+        <h1>Datadog  vs  AWS CloudWatch
+            <img class="logo" src="https://symbols.getvecta.com/stencil_78/21_datadog.de25ce0081.svg" alt="Datadog Logo" style="width:260px;height:60px;"/>
+        </h1>
+    
+    
+    </div>
+
+	<nav>
+        <a href="#" onClick="document.getElementById('top').scrollIntoView();">AWS</a>
+        <a onClick="document.getElementById('2nd').scrollIntoView();">Offerings</a>
+        <a onClick="document.getElementById('3rd').scrollIntoView();">Pricing</a>
+        <a onClick="document.getElementById('4th').scrollIntoView();">Differentiators</a>
+        <a onClick="document.getElementById('5th').scrollIntoView();">Datadog</a>
+        
+        <div id="indicator"></div>
+    </nav>
+</header>
+
+
+<body>
+    <div class="container" id="top">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AWS1.mp4') }}" type="video/mp4">
+        </video>
+
+        <div class="overlay">
+            <div class="text">
+                <br>
+                <br>
+
+                <h1> What is </h1>
+                <h3>AWS CloudWatch? 
+                    <img src="https://codeopinion.com/wp-content/uploads/2019/08/aws-cloudwatch-logo-png-transparent.png" class="awslogo" alt="CloudWatch Logo" style="width:100px;height:120px;"/>
+                </h3>
+                <p>AWS Native cloud monitoring platform</p>
+                <br>
+                
+                <div id="explorebutton" onClick="document.getElementById('2nd').scrollIntoView();"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container2" id="2nd">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AWS2.mp4') }}" type="video/mp4">
+        </video>
+
+        <div class="wrapper">
+            <h1> Offerings </h1>
+            <div class="cols">
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://cdn.dribbble.com/users/1514097/screenshots/3451172/dashboard-icon.gif)">
+                                  <div class="inner">
+                                      <p>Dashboard</p>
+                        <span>CloudWatch</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                    <p>
+                                        Collect default metrics from meow then 70+ AWS products.
+                                        Custom views of metrics and alarms for AWS resources that can be added into the dashboard.
+                                        
+                                        You can also add widgets to your dashboard which are different types of graphs, charts, text, log streams
+                                        alarms etc.
+                                        <br>
+                                        <br>
+                                        No aesthetic customizability, some what simple dashboard layout.
+                
+                                    </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/cc/00/b4/cc00b40751911eb1a4708af4ca90faea.gif)">
+                                  <div class="inner">
+                                      <p>Alarms</p>
+                        <span>Metrics and Composite</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                        <br>
+                                        <h2>Metric alarms</h2>
+                                        <p>
+                                        Relative threshold alarms that are set on metrics. Actions can be queued
+                                        (Amazon SNS, EC2 Action, Autoscaling, incident report).
+                                        </p>
+                                        <h2>Composite alarms</h2>
+                                        <p>
+                                        Overarching alarm that is triggered by multiple other alarms.
+                                        Meant to reduce alarm fatigue with common alarms by correlating them with other independent alarms.
+                                        </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                          <div class="containerflip">
+                              <div class="front" style="background-image: url(https://i.pinimg.com/originals/c6/1c/d2/c61cd23ff606ef7b7599ccf2c8dda159.gif)">
+                                  <div class="inner">
+                                      <p>Logs</p>
+                        <span>Cloudwatch</span>
+                                  </div>
+                              </div>
+                              <div class="back">
+                                  <div class="inner">
+                                        <h2>Query and Monitor Log Data </h2>
+                                        <p>
+                                            Error logs
+                                          <br>
+                                          <br>
+                                          Log retention is also tied to AWS storage services that can be from 1 day to 10 year retention.
+                                
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+
+                      <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="containerflip">
+                            <div class="front" style="background-image: url(https://bevologyinc.com/blog/wp-content/uploads/2019/01/Metrics-gif.gif)">
+                                <div class="inner">
+                                    <p>Metrics </p>
+                      <span>CloudWatch</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <br>
+                                    <h2> Granularity </h2>
+                                    <p>
+                                        Base Resolution - 1 to 5 minutes
+                                        <br>
+                                        High Resolution - highest level of granularity, metric per second
+                                        <br>
+                                        Calls PutMetricData API and are charged per metric
+                                
+                                        Metrics are default tracked characteristics of AWS services such as EC2 instances. 
+                                        Common metrics are CPU Utilization, Disk space/read/write, network in/out, instance health, and credit usage.
+                                        These metrics can be grouped by service (EC2, RDS, S3), by autoscaling group, by instance type, by instance ID, etc.
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="containerflip">
+                            <div class="front" style="background-image: url(https://i.pinimg.com/originals/31/29/46/3129460143a343c72f39adc53ad7fa62.gif)">
+                                <div class="inner">
+                                    <p>Servicelens</p>
+                      <span>CloudWatch</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>
+                                        Gain visibility into application by correlating infrastructure monitoring (logs) 
+                                        and transaction monitoring (traces).
+                                        <br>
+                                        <br>
+                                        Pinpoint performance bottlenecks and reduce MTTR by speeding up root cause analysis.
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="containerflip">
+                            <div class="front" style="background-image: url(https://developer.android.com/guide/practices/ui_guidelines/images/NB_Icon_Mask_Shapes_Ext_02.gif)">
+                                <div class="inner">
+                                    <p>Synthetics</p>
+                      <span>CloudWatch</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Canaries</h2>
+                                    <p>
+                                        <br>
+                                        <br>
+                                        Configurable scripts that run on a schedule to monitor endpoints and APIs.
+                                        Much like Datadog's synthetics, they follow routes and perform actions on pages using puppeteer or selenium.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+           </div>
+        </div>
+
+    </div>
+
+    <div class="container3" id="3rd">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AWS3.mp4') }}" type="video/mp4">
+        </video>
+
+        <h1 class="text-center">Pricing</h1>
+
+        <div class="pricing-box-container">
+            <div class="pricing-box text-center">
+                <h5>Free tier</h5>
+                <p class="price"><sup>$</sup>0<sub>/mo</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong> Basic Monitoring Metrics (5min)</li>
+                    <li><strong></strong> 10 Detailed Monitoring Metrics (1min)</li>
+                    <li><strong></strong> 3 Dashboards 50 metrics</li>
+                    <li><strong></strong> 10 Alarm metrics (standard)</li>
+                    <li><strong></strong> 5GB total log data</li>
+                    <li><strong></strong> 100 canary runs per month</li>
+                
+                </ul>
+                <a href="https://aws.amazon.com/cloudwatch/pricing/" class="btn-primary">Learn More</a>
+            </div>
+        
+            <div class="pricing-box text-center">
+                <h5>Dashboard</h5>
+                <p class="price"><sup>$</sup>3<sub>/mo</sub></p>
+                <ul class="features-list">
+                    <li><strong>25</strong> Per Dashboard Per Month</li>
+                    <br>
+                    <br>
+                </ul>
+                <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html" class="btn-primary">Learn More</a>
+            
+            </div>
+        
+            <div class="pricing-box text-center">
+                <h5>Alarms</h5>
+                <p class="price"><sup>$</sup>0.30<sub>per standard</sub></p>
+                <p class="price"><sup>$</sup>0.90<sub>per high res</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong>Standard Resolution (60sec)</li>
+                    <li><strong></strong>High Resolution (10sec) </li>
+                    <li><strong></strong>
+                        Each alarm is priced as three alarm metrics combined
+                        <br>
+                        <br>
+                        One lower bound, one upper bound, and one evaluated metric.
+                    </li>
+                   
+                </ul>
+                <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html" class="btn-primary">Learn More</a>
+            </div>
+
+            <div class="pricing-box text-center">
+                <h5>Logs</h5>
+                <p class="price"><sup>Ingestion $</sup>0.50<sub>/gb</sub></p>
+                <p class="price"><sup>Store $</sup>0.03<sub>/gb</sub></p>
+                <p class="price"><sup>Analyze $</sup>0.005<sub>/gb</sub></p>
+
+                <ul class="features-list">
+                    <li><strong></strong>No Data transfer IN charge</li>
+                    <li><strong></strong>Priced only for data transfer OUT</li>
+                </ul>
+                <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html" class="btn-primary">Learn More</a>
+            </div>
+
+            <div class="pricing-box text-center">
+                <h5>Canaries</h5>
+                <p class="price"><sup>$</sup>0.0012<sub>/run</sub></p>
+                <ul class="features-list">
+                    <li><strong></strong>Additional charges for AWS services utilized</li>
+                    <li><strong></strong>Additional cost of storing canary data</li>
+                    
+                </ul>
+                <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container4" id="4th">
+        <video autoplay muted loop>
+            <source src="{{ url_for('static', filename='AWS4.mp4') }}" type="video/mp4">
+        </video>
+        
+        <div class="topbox">
+            <h1>Why do companies use CloudWatch?</h1>
+        </div>
+
+        <div class="mainbox">
+            <h1>
+                <img class="mapboxlogo" style="vertical-align: middle;" src="https://d1.awsstatic.com/product-marketing/cloudwatch/Customer%20Logos/600x400_Mapbox_Logo.eda4c98e19082354ba589d30aeae997cca281ead.png" alt="Mapbox Logo" />
+               
+                "CloudWatch Events enable us to provide utilization and pricing information to teams so they can audit account security, trigger AWS Lambda actions for compliance and security use cases, and schedule our resources using the cloud."
+                
+                <br>
+                Emily McAfee, Platform Engineering Manager - Mapbox
+            </h1>
+            
+            <br>
+            <h1>
+                <img class="pushpaylogo" style="vertical-align: middle;" src="https://d1.awsstatic.com/product-marketing/cloudwatch/Customer%20Logos/600x400_New_Pushpay_Logo.7a0cdf79675ffb32d7959b8bb453e014eb74e08b.png" alt="Pushpay Logo" />
+                "With CloudWatch Logs Insights, we are now able to query logs within CloudWatch Logs reducing operational complexity. Pay per query gives us flexibility to scale at our own pace and our engineers can begin to consume and query logs without waiting for the setup, integration, and ingestion to take place with our current solution."
+                <br>
+                Peter Goodman, Director Site Reliability Engineering - Pushpay
+            </h1>
+
+            <br>
+            <h1>
+                <img class="cloudpassagelogo" style="vertical-align: top;" src="https://i.pinimg.com/originals/77/6d/15/776d1561facf95582d71d1f6250fda77.png" alt="Cloudpassage Logo"/>
+                "We use a microservices-based architecture. Amazon CloudWatch was an instant solution as it required no infrastructure set up or maintenance. CloudWatch has no issues handling our scale and removed the operational burden of integrating and managing multiple tools."
+                <br>
+                Vitaliy Geraymovych, Co-founder & Vice President, Engineering - CloudPassage
+            </h1>
+            
+        </div>
+    </div>
+
+    <div class="container5" id="5th">
+        <div class="text2">
+            
+            <h1> so... </h1>
+            <h3>Why</h3>
+            <h3>Datadog?</h3>
+            <p></p>
+            <br>
+            
+
+            <div class="ddogbox">
+                <form>
+                    <span class="text-center2">
+                        
+                        <h1>Hybrid Environments</h1>
+                        <h2> 
+                            Datadog is able to monitor any cloud environment and on-prem environment.
+                            CloudWatch cannot monitor on-premise infrastructure as it 
+                            was built for AWS, not the greater cloud.
+                        </h2>
+
+                        <h1>One Dashboard, Multiple Vendors</h1>
+                        <h2>
+                            As companies scale, it is common for their environments to stretch
+                            across multiple products and infrastructure from different cloud vendors.
+                            While CloudWatch can only monitor AWS, Datadog is able to monitor
+                            any cloud vendors infrastructure along with over 400+ integrations.
+                
+                        </h2>
+
+                        <h1>DevOps Communciation</h1>
+                        <h2> AWS requires permissions and AWS accounts to share dashboards, 
+                            Datadog offer public invite urls which allows anyone on any team to gain
+                            value from the platform. Alerting and sharing information on AWS is limited to
+                            AWS SNS and incident reports, however Datadogs social feed of alerts, incidents, 
+                            and graphs can be shared within the platform and even across Pagerduty, Slack, ServiceNow.
+
+
+                          </h2>
+
+                        <h1>Greater Granularity</h1>
+                        <h2> 
+                            Datadogs agent is able to pull metrics from applications at 
+                            15 second granularity. CloudWatch's highest granularity is at 1 minute 
+                            for metrics and is charged per metric instead of Datadogs per host.
+                        </h2>
+
+                        <h1> Superior UI</h1>
+                        <h2> CloudWatch's dashboards and UI are nothing special. </h2>
+
+
+                    </span>
+
+                </form>	
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
