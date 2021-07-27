@@ -557,7 +557,7 @@ nav a:nth-child(5):hover ~ #indicator
       height: 100%;
       content: '';
       display: block;
-      opacity: .8;
+      opacity: .6;
       background-color: #000;
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
